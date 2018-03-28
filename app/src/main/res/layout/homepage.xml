@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:layout_weight="0.25"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/notes"
+            style="@android:style/Widget.Holo.Button.Borderless"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_gravity="top|center"
+            app:srcCompat="@drawable/notepad" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.75"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:id="@+id/notifi"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@drawable/notification" />
+
+            <ImageButton
+                android:id="@+id/review"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@drawable/testquiz" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/marks"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@drawable/scoreboard" />
+
+            <ImageButton
+                android:id="@+id/asgn"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@drawable/calendar" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
